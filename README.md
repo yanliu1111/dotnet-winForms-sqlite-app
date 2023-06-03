@@ -6,6 +6,7 @@
 - Windows Forms
 - Sqlite
 - ORM: Entity Framework Core
+- Visual Studio 2022
 
 ## Tasks
 
