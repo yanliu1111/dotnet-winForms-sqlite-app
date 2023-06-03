@@ -34,12 +34,12 @@ namespace DotNetWinFormApp.Gateway
         }
         public bool Delete(int id) 
         {
-            var student = _dbContext.Employees.FirstOrDefault(s => s.Id == id);
-            if (student == null)
+            var employee = _dbContext.Employees.FirstOrDefault(s => s.Id == id);
+            if (employee == null)
             {
                 return false;
             }
-            _dbContext.Employees.Remove(student);
+            _dbContext.Employees.Remove(employee);
             return _dbContext.SaveChanges() > 0;
 
         }
